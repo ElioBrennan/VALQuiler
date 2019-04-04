@@ -1,0 +1,360 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** REMS reset - 62.5% = 10px de 16px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Global styles */
+
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utils */
+
+.section-c {
+    margin-top: 2 rem;
+    margin-bottom: 2 rem;
+}
+
+/* Header */
+
+.site-header {
+    background-color: black;
+}
+
+.site-header.index {
+    background-image: url(../img/playafondo.jpg);
+    background-position: center center;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.container-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-header h1 {
+    color: white;
+    padding-bottom: 3rem;
+    max-width: 70rem;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/* Navigation */
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.navigation a:hover {
+    color: #bc5100
+}
+
+.navigation a:last-of-type {
+    margin-right: 0rem;
+}
+
+/* Icons */
+
+.icons-meet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-meet i {
+    font-size: 5rem;
+    color: darkred;
+}
+
+.icon-meet {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icon-meet h3 {
+    text-transform: uppercase;
+}
+
+.section-header {
+    font-weight: 250;
+    text-align: center;
+}
+
+/* Flats list */
+
+.flats-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.from:first-child {
+    margin-top: 0rem;
+}
+
+.flat {
+    flex-basis: calc(33.3% - 1rem);
+    background-color: #F5F5F5;
+    border: 1px solid grey;
+    margin-top: 1rem;
+}
+
+.flat-desc {
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+.flat-desc h3, .flat-desc p {
+    margin: 0;
+}
+
+.flat-price {
+    padding-top: 2rem;
+    text-align: center;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.icons-flat {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.icons-flat li {
+    flex: 1;
+}
+
+.icons-flat li i {
+    font-size: 3rem;
+}
+
+/** Buttons */
+
+.button {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.75rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.info {
+    background-color: darkred;
+    display: block;
+}
+
+.list {
+    background-color: darkgoldenrod;
+}
+
+.b-contact {
+    background-color: darkred;
+}
+
+.r-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Contact **/
+
+.contact {
+    background-image: url(../img/contacto.jpg);
+    background-position: center center;
+    background-size: conver;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contact-header {
+    color: white;
+    padding-bottom: 3rem;
+    max-width: 70rem;
+}
+
+.contact-info {
+    flex: 1;
+    color: white;
+}
+
+.contact-info p {
+    font-size: 2rem;
+}
+
+/* Blog */
+
+.inf-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inf-sec .blog {
+    flex-basis: 60%;
+}
+
+.inf-sec .clients {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entry-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entry-blog:last-child {
+    margin-bottom: 0;
+}
+
+.entry-info h4 {
+    margin: 0;
+    line-height: 1;
+}
+
+.entry-blog .entry-img {
+    flex-basis: 40%;
+}
+
+.entry-blog .entry-info {
+    flex-basis: calc(60% - 2rem);
+}
+
+.entry-blog .entry-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.entry-blog .entry-info span,
+.entry-f span {
+    color: darkred;
+}
+
+.entry-blog .entry-info h4::after {
+    content: "";
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: darkred;
+}
+
+/* Clients */
+
+.client {
+    background-color: darkred;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 10%;
+}
+
+.client p {
+    text-align: right;
+}
+
+.client .client-text {
+    text-align: left;
+}
+
+/* Footer */
+.site-footer {
+    background-color: darkgray;
+    margin-top: 2rem;
+}
+
+.container-footer {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* About us */
+.about-text .about-experience {
+    font-weight: 800;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+}
+
+.about:last-child {
+    margin-right: 0;
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+/* Contact */
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea, select {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+}

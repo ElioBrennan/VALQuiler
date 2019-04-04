@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VALQuiler - Contacta con nosotro</title>
+    <link rel="icon" href="resources/img/favicon.png" sizes="16x16" type="image/png"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900">
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container container-header">
+            <div class="bar">
+                <a href="index.html">
+                    <img src="resources/img/linkedin_banner_image_1.png" alt="VALQuiler">
+                </a>
+                <nav class="navigation">
+                    <a href="about_us.html">Sobre nosotros</a>
+                    <a href="flats.html">Nuestros pisos</a>
+                    <a href="blog.html">Consulta nuestro blog</a>
+                    <a href="contact.html">Contáctanos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="section-header">Contacta con nosotros</h1>
+
+    <main class="container section-c">
+        <img src="resources/img/oficina.jpg" alt="">
+
+        <h2 class="section-header">Formulario</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Información del remitente</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+
+                <label for="mobile-number">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea name="message_text" id="message" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre pisos</legend>
+                <label for="options">Elige el piso del que quieres información:</label>
+                <select name="options_select" id="options" required>
+                    <option value="" disabled selected>Pisos disponibles</option>
+                    <option value="">Piso 1</option>
+                    <option value="">Piso 2</option>
+                    <option value="">Piso 3</option>
+                    <option value="">Piso 4</option>
+                    <option value="">Piso 5</option>
+                    <option value="">Piso 6</option>
+                </select>
+            </fieldset>
+
+            <input class="button b-contact" type="submit">
+        </form>
+
+    </main>
+
+    <footer class="site-footer section-c">
+        <div class="container container-footer">
+            <nav class="navigation">
+                <a href="about_us.html">Sobre nosotros</a>
+                <a href="flats.html">Nuestros pisos</a>
+                <a href="blog.html">Consulta nuestro blog</a>
+                <a href="contact.html">Contáctanos</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
